@@ -32,12 +32,12 @@ header{
 }
 .menu{
     background-color: #0c0711;
-    height: 10%;
+    height: 5%;
     align-items: center;
     justify-content: space-between;
     display: grid;
     margin: auto;
-    padding: 5vh;
+    padding: 1%
 }
 nav{
     display: inline-block;
@@ -183,9 +183,6 @@ p{
     }
     p{
         text-align: justify;
-    }
-    h1{
-        margin: 0%;
     }
 }
 @media(min-width:840px){
