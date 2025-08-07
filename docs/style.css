@@ -75,7 +75,7 @@ a:hover{
 .star{
     width: 17px;
     height: 15px;
-    background-image: url(img/StarWhite.svg);
+    background-image: url("img/StarWhite.svg");
     display: inline-block;
     background-size: cover;
 }
