@@ -100,7 +100,6 @@ section{
     grid-template-columns: auto auto;
     margin: auto;
     border-radius: 20px;
-    /* box-shadow: 0 0 20px 5px rgba(58, 101, 153, 0.7); */
    
 } 
 /*.sobre_div_principal:hover{
@@ -191,5 +190,4 @@ p{
         background: linear-gradient(to top , #16253b,#142338,#0b131e)
     }
 }
-
 
