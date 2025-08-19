@@ -37,12 +37,12 @@ header{
     justify-content: space-between;
     display: grid;
     margin: auto;
-    padding: 1%
+    padding: 1%;
 }
 nav{
     display: inline-block;
     grid-column: 2;
-    grid-row: 1;;
+    grid-row: 1;
 }
 ul{
     float: right;
@@ -188,6 +188,8 @@ p{
 }
 @media(min-width:840px){
     body{
-        background: linear-gradient(to bottom , #0b131e,#142338,#0b131e)
+        background: linear-gradient(to top , #16253b,#142338,#0b131e)
     }
 }
+
+

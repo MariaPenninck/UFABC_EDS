@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    height: 100%;
+    margin:0%;
+    font-family: "Poppins", sans-serif;
+    /*background: linear-gradient(to bottom , #ae9cc7,#9f86c0,#231943);*/
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-color: #0b131e;
+    /* background-color: #0c0711; */
+    /*background-color: #171e15;
+    background-color: #82a677;*/
+}
+header{
+    position: relative;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+.menu{
+    background-color: #0b131e;
+    height: 5%;
+    align-items: center;
+    justify-content: space-between;
+    display: grid;
+    margin: auto;
+    padding: 1.9%;
+}
+nav{
+    display: inline-block;
+    grid-column: 2;
+    grid-row: 1;;
+}
+ul{
+    float: right;
+    margin-right: 30px;
+}
+h1{
+    color: white;
+    font-size: 120%;
+    margin-left: 30px;
+    font-weight: 400;
+    font-style: normal;
+}
+li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 5px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    font-size: 100%;
+    letter-spacing: 1px;
+    font-weight: 450;
+}
+a:hover{
+    color:#99bae0;
+}
+.star{
+    width: 17px;
+    height: 15px;
+    background-image: url("img/StarWhite.svg");
+    display: inline-block;
+    background-size: cover;
+}
+.tema{
+    font-size: 80%;
+    text-align: justify;
+}
+/* ----- Carrossel ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            overflow-x: hidden;
+            height: 100vh;
+        }
+
+        .main-slide {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        .main-slide.active {
+            opacity: 1;
+            z-index: 2;
+        }
+
+        .main-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slide-preview {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 240px;
+            height: 160px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            z-index: 10;
+            transition: all 0.5s ease;
+        }
+
+        .slide-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slide-info {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            max-width: 60%;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 8px;
+            z-index: 10;
+        }
+
+        .nav-btn {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            border: none;
+            background: transparent;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .prev-btn {
+            left: 30px;
+        }
+
+        .next-btn {
+            right: 30px;
+        }
+
+        .indicators {
+            position: fixed;
+            bottom: 130px;
+            right: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            max-width: 120px;
+            z-index: 10;
+            background-color: transparent;
+        }
+
+        .indicator {
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .indicator.active {
+            background: white;
+            transform: scale(1.3);
+        }
+
+        @media (max-width: 768px) {
+            .slide-preview {
+                width: 80px;
+                height: 60px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .slide-info {
+                left: 20px;
+                bottom: 20px;
+                max-width: calc(100% - 40px);
+                padding: 15px;
+            }
+
+            .nav-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+
+            .prev-btn {
+                left: 15px;
+            }
+
+            .next-btn {
+                right: 15px;
+            }
+
+            .indicators {
+                bottom: 100px;
+                right: 20px;
+            }
+        }
